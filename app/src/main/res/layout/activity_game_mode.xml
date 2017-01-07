@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.utbm.tx.quizz.GameModeActivity" >
+
+
+    <RelativeLayout android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginTop="117dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/btn_classique"
+                style="@style/button_text"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_menu"
+                android:text="@string/mode_classique"
+                android:layout_weight="0.68" />
+
+            <Button
+                android:id="@+id/btn_theme"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_menu"
+                android:text="@string/mode_theme" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1.5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_retour"
+                style="@style/button_text"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_menu"
+                android:text="@string/retour" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
