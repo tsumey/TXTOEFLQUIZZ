@@ -23,6 +23,15 @@
             android:src="@drawable/logo"
 			android:id="@+id/imageView" />
 
+		<Button
+			android:id="@+id/btn_cours"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/cours_button"
+			android:background="@drawable/button_menu"
+			style="@style/button_text" android:textColor="#ffffff"
+			android:layout_weight="0.45" />
+
         <Button
             android:id="@+id/btn_play"
             android:layout_width="match_parent"

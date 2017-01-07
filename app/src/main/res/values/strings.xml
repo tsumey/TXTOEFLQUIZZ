@@ -31,6 +31,7 @@
     <string name="tous_button">Tous</string>
     <string name="classique_button">Classique</string>
     <string name="bytheme_button">Theme</string>
+    <string name="cours_button">Cours</string>
 
     <!--  Game Mode Menu -->
     <string name="mode_classique">Classique</string>

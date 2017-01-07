@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
     //private Button settings=null;
     private Button quitter = null;
     private Button score = null;
+    private Button cours = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +28,21 @@ public class MainActivity extends Activity {
 
         score = (Button) findViewById(R.id.btn_score);
 
+        cours = (Button) findViewById(R.id.btn_cours);
+
         jouer.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 //Initialisation de la prochaine activit�
                 Intent myIntent = new Intent(getBaseContext(), GameModeActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        //CoursActivity
+        
+        cours.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getBaseContext(), CoursActivity.class);
                 startActivity(myIntent);
             }
         });
