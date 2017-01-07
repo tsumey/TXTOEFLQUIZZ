@@ -24,14 +24,6 @@
             android:layout_height="wrap_content"
             />
 
-        <Button android:id="@+id/activation"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Sélectionner"
-            android:background="@drawable/button_menu"
-            style="@style/button_text"
-            android:textSize="20dp"/>
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent" >

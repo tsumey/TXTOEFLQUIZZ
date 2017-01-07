@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
         });
 
         //CoursActivity
-        
+
         cours.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getBaseContext(), CoursActivity.class);

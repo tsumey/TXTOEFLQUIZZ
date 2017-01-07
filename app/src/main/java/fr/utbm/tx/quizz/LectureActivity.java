@@ -113,7 +113,6 @@ public class
             ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(LectureActivity.this, android.R.layout.simple_spinner_item, listTitle);
             adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinTitle.setAdapter(adapter1);
-            btn_select = (Button) findViewById(R.id.activation);
                 spinTitle.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
                     @Override

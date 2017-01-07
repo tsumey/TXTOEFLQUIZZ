@@ -67,6 +67,7 @@ public class CoursActivity extends Activity implements View.OnClickListener {
             case (R.id.cours4):
                 numBtn = 3;
                 break;
+            }
         }
         new JSONCourse().execute("http://to52.julienpetit.fr/api/v1/learning/categories");
     }
