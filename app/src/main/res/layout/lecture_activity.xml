@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="fr.utbm.tx.quizz.Activities.LectureActivity" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <Spinner android:id="@+id/courseSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button android:id="@+id/activation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Sélectionner"
+            android:background="@drawable/button_menu"
+            style="@style/button_text"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text=""
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

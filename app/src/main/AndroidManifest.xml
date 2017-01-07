@@ -23,6 +23,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".CoursActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Cours">
+        </activity>
+
+        <activity
+            android:name=".LectureActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Choisir ce cour">
+        </activity>
+        <activity
             android:name=".JouerActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_jouer" >
