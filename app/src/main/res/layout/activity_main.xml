@@ -17,13 +17,12 @@
 
         <ImageView
             android:layout_width="250dp"
-            android:layout_height="200dp"
-            android:layout_marginBottom="55dp"
+            android:layout_height="180dp"
             android:contentDescription="@string/logo_alt"
             android:src="@drawable/logo"
 			android:id="@+id/imageView" />
 
-		<Button
+        <Button
 			android:id="@+id/btn_cours"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

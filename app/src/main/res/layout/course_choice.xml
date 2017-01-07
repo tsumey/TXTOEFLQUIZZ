@@ -3,56 +3,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    tools:context="fr.utbm.tx.quizz.Activities.CoursActivity" >
+    android:layout_gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:gravity="center"
         android:orientation="vertical"
-        tools:context="fr.utbm.tx.quizz.Activities.MainActivity"
         android:weightSum="1"
-        android:gravity="center">
+        tools:context="fr.utbm.tx.quizz.Activities.MainActivity">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:contentDescription="@string/logo_alt"
             android:src="@drawable/logo" />
+
         <Button
             android:id="@+id/cours1"
+            style="@style/button_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Développement durable"
             android:background="@drawable/button_menu"
-            style="@style/button_text" />
+            android:text="Développement durable" />
 
         <Button
             android:id="@+id/cours2"
+            style="@style/button_text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Stratégies et Gouvernances"
-            android:background="@drawable/button_menu"
-            style="@style/button_text"
             android:layout_gravity="left"
-            android:enabled="true" />
+            android:background="@drawable/button_menu"
+            android:enabled="true"
+            android:text="Stratégies et Gouvernances" />
 
         <Button
             android:id="@+id/cours3"
+            style="@style/button_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bonnes Pratiques"
             android:background="@drawable/button_menu"
-            style="@style/button_text"/>
+            android:text="Bonnes Pratiques" />
+
         <Button
             android:id="@+id/cours4"
+            style="@style/button_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Energies, Air et Climat"
             android:background="@drawable/button_menu"
-            style="@style/button_text"/>
+            android:text="Energies, Air et Climat" />
 
     </LinearLayout>
 
