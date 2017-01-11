@@ -33,7 +33,7 @@
         <activity
             android:name=".LectureActivity"
             android:configChanges="orientation|screenSize"
-            android:label="Choisir ce cour">
+            android:label="Choisir ce cours">
         </activity>
         <activity
             android:name=".JouerActivity"
@@ -46,7 +46,7 @@
         </activity>
         <activity
             android:name=".GameModeActivity"
-            android:label="@string/title_activity_game_mode" >
+            android:label="Mode de jeu" >
         </activity>
         <activity
             android:name=".ChoiceScoreActivity"

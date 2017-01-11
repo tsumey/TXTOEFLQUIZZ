@@ -54,7 +54,10 @@ public class MainActivity extends Activity {
                 startActivity(myIntent);
             }
         });
-        
+
+
+        // Setting not implemented
+
        /* settings.setOnClickListener(new OnClickListener(){
         	public void onClick(View v){
         		 //Initialisation de la prochaine activit�
@@ -62,6 +65,8 @@ public class MainActivity extends Activity {
  			     startActivity(myIntent);
         	}
         });*/
+
+        // Show this when closing app
 
         quitter.setOnClickListener(new OnClickListener() {
 
@@ -76,6 +81,7 @@ public class MainActivity extends Activity {
 
     }
 
+    // Warning when the app is closing with back pressed button instead of "quitter" button
     public void onBackPressed(){
         new AlertDialog.Builder(this)
                 .setMessage("Voulez-vous vraiment quitter le Quizz ?")

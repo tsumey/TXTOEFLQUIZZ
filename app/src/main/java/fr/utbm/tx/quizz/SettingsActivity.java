@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+// Setting not implemented
 
+/**
 public class SettingsActivity extends Activity {
 	
 	private Button save = null;
@@ -26,3 +28,4 @@ public class SettingsActivity extends Activity {
         });
     }
 }
+ **/

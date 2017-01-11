@@ -24,12 +24,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.utbm.tx.quizz.R;
-
 public class
         LectureActivity extends Activity
 {
-    private Button btn_select = null;
     private String idLecture = null;
     private Spinner spinTitle = null;
     private TextView text = null;
@@ -42,7 +39,6 @@ public class
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.lecture_activity);
-        btn_select = (Button) findViewById(R.id.cours1);
         spinTitle = (Spinner) findViewById(R.id.courseSpinner);
         text = (TextView) findViewById(R.id.information);
 
@@ -107,6 +103,8 @@ public class
             }
             return null;
         }
+
+        //Display courses
 
         protected void onPostExecute(List<String> result) {
             super.onPostExecute(result);

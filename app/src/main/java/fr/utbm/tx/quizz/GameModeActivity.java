@@ -27,7 +27,7 @@ public class GameModeActivity extends Activity {
 		theme=(Button)findViewById(R.id.btn_theme);
 		retour=(Button)findViewById(R.id.btn_retour);
 
-
+ // Alert Dialog - Progression perdue
         AlertDialog.Builder build;
         build = new AlertDialog.Builder(GameModeActivity.this);
         build.setTitle("ATTENTION");
@@ -43,6 +43,7 @@ public class GameModeActivity extends Activity {
         alert.show();
 
         // Launch "classique" mode game
+
 		classique.setOnClickListener(new OnClickListener(){
         	public void onClick(View v){
         		 //Initialisation de la prochaine activit�

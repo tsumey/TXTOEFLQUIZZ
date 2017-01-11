@@ -38,6 +38,8 @@ public class CoursActivity extends Activity implements View.OnClickListener {
     private int numBtn =0;
 
     @Override
+
+    //Button choice
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -53,6 +55,8 @@ public class CoursActivity extends Activity implements View.OnClickListener {
         cours4.setOnClickListener(this);
     }
 
+
+    // Courses choice
     public void onClick(View v) {
         switch (v.getId()) {
             case (R.id.cours1):
@@ -69,6 +73,8 @@ public class CoursActivity extends Activity implements View.OnClickListener {
                 break;
 
         }
+
+        // Retrieve courses from external DB
         new JSONCourse().execute("http://to52.julienpetit.fr/api/v1/learning/categories");
     }
 
@@ -129,6 +135,8 @@ public class CoursActivity extends Activity implements View.OnClickListener {
             }
             return null;
         }
+
+// Display courses
 
         protected void onPostExecute(List<String> result){
             super.onPostExecute(result);

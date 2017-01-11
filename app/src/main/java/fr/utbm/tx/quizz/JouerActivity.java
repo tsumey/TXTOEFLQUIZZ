@@ -177,8 +177,7 @@ public class JouerActivity extends Activity implements OnClickListener {
 				}
 			}
 		});
-		
-		image = this.getResources().getDrawable( R.drawable.info_new );
+
 		int h = image.getIntrinsicHeight(); 
 		int w = image.getIntrinsicWidth();   
 		image.setBounds( 0, 0, w, h );
